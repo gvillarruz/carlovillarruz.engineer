@@ -21,6 +21,7 @@ jQuery(document).ready(function(){
 	arlo_tm_contact_form();
 	arlo_tm_owl_carousel();
 	arlo_tm_animate_text();
+	arlo_tm_animate_texts();
 	arlo_tm_projects();
 	arlo_tm_miniboxes();
 	arlo_tm_isotope();
@@ -516,6 +517,20 @@ function arlo_tm_animate_text(){
 	
 		animateSpan.typed({
 			strings: ["Student", "Computer Engineer", " Tech Enthusiast"],
+			loop: true,
+			startDelay: 1e3,
+			backDelay: 2e3
+		});
+}
+
+function arlo_tm_animate_texts(){
+	
+	"use strict";
+	
+	var animateSpan			= jQuery('.arlo_tm_animation_text_words');
+	
+		animateSpan.typed({
+			strings: ["motivated", "hardworking", " passionate"],
 			loop: true,
 			startDelay: 1e3,
 			backDelay: 2e3
